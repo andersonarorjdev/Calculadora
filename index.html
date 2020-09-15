@@ -8,22 +8,24 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="../appcalculadora/calculadora.js"></script>
+    <script src="./calculadora.js"></script>
     <style>
         .calculadora {
-          margin-top: 40px;
-          border: solid 1px blue;
+          margin-top: 110px;
+          border: solid 1px orangered;
           padding: 20px;
-          background-color: orangered;
+          background-color: black;
           border-radius: 30px;
-          box-shadow: 1px 1px 5px green;
+          /* box-shadow: 1px 1px 5px green; */
         }
   
         .btn {
           width: 60px;
           height: 50px;
           margin: 5px;
-          box-shadow: 1px 1px 1px white;
+          border:  1px solid orangered;
+          border-radius: 40px;
+          background-color: orangered;
         }
   
         .clear {
@@ -43,9 +45,14 @@
           font-size: 20px;
           margin-top: 10px;
           margin-bottom: 20px;
-          border: solid 1px blue;
-          background-color: chartreuse;
+          border: solid 1px white;
+          background-color:blue;
           box-shadow: 1px 1px 1px #000;
+          height: 120px;
+          color:white;
+        }
+        #resultado{
+          background-color: black;
         }
   
       </style>
@@ -57,7 +64,7 @@
                   <br />
         
                   <div class="calculadora">
-                    <input id="resultado" type="text" class="form-control resultado bg-success" placeholder="0" disabled="disabled" />
+                    <input  id="resultado" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
                     
                     <div class="row">
                       <button onclick="calcular('acao','c')" type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
